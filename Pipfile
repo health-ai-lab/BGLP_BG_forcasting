@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+numpy = "*"
+pandas = "*"
+matplotlib = "*"
+seaborn = "*"
+sklearn = "*"
+tensorflow-gpu = "==1.14.0"
+jupyter = "*"
+pmdarima = "*"
+statsmodels = "*"
+
+[requires]
+python_version = "3.5.2"
