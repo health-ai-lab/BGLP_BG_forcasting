@@ -1,0 +1,115 @@
+
+['single', 'univariate', 'teacher', '30']: 18.740471601486206 seconds 
+
+**************
+['single', 'univariate', 'teacher', '30']: 22.222682237625122 seconds 
+
+**************
+['single', 'univariate', 'teacher', '60']: 23.695069313049316 seconds 
+
+**************
+['single', 'univariate', 'teacher', '60']: 19.385334968566895 seconds 
+
+**************
+['single', 'univariate', 'teacher_student', '30']: 1328.5923125743866 seconds 
+
+**************
+['single', 'univariate', 'teacher_student', '60']: 1146.8797409534454 seconds 
+
+**************
+['single', 'univariate', 'teacher_student', '60']: 1420.2974367141724 seconds 
+
+**************
+['single', 'univariate', 'teacher_student', '30']: 2081.0323038101196 seconds 
+
+**************
+['single', 'univariate', 'retrain', '60']: 3340.9822969436646 seconds 
+
+**************
+['single', 'univariate', 'retrain', '60']: 3465.7893435955048 seconds 
+
+**************
+['single', 'univariate', 'retrain', '30']: 3783.6240677833557 seconds 
+
+**************
+['single', 'univariate', 'student', '30']: 4396.12682390213 seconds 
+
+**************
+['multi', 'multivariate', 'teacher', '30']: 21.76307249069214 seconds 
+
+**************
+['multi', 'multivariate', 'teacher', '60']: 22.537617683410645 seconds 
+
+**************
+['multi', 'multivariate', 'teacher', '60']: 31.85231852531433 seconds 
+
+**************
+['multi', 'multivariate', 'teacher', '30']: 30.421942710876465 seconds 
+
+**************
+['single', 'univariate', 'student', '60']: 5805.417384624481 seconds 
+
+**************
+['single', 'univariate', 'teacher_student', '60']: 1262.0189325809479 seconds 
+
+**************
+['multi', 'multivariate', 'teacher_student', '30']: 1226.8521745204926 seconds 
+
+**************
+['multi', 'multivariate', 'retrain', '30']: 3037.971035003662 seconds 
+
+**************
+['multi', 'multivariate', 'retrain', '60']: 3643.5561633110046 seconds 
+
+**************
+['multi', 'multivariate', 'student', '30']: 4522.752588510513 seconds 
+
+**************
+['multi', 'multivariate', 'teacher_student', '60']: 983.3674893379211 seconds 
+
+**************
+['multi', 'multivariate', 'teacher_student', '60']: 1063.2747497558594 seconds 
+
+**************
+['multi', 'multivariate', 'teacher_student', '30']: 1396.690764427185 seconds 
+
+**************
+['multi', 'multivariate', 'student', '60']: 4266.014235019684 seconds 
+
+**************
+['single', 'univariate', 'student', '60']: 13918.863580703735 seconds 
+
+**************
+['single', 'univariate', 'student', '30']: 14589.220568656921 seconds 
+
+**************
+['single', 'univariate', 'retrain', '30']: 15445.01556134224 seconds 
+
+**************
+['multi', 'multivariate', 'retrain', '60']: 10693.163974523544 seconds 
+
+**************
+['multi', 'multivariate', 'teacher', '30']: 22.233503103256226 seconds 
+
+**************
+['multi', 'multivariate', 'retrain', '30']: 11636.430813074112 seconds 
+
+**************
+['single', 'univariate', 'retrain', '60']: 15389.821629047394 seconds 
+
+**************
+['RNN', 'teacher', 'univariate']: 32.41064929962158 seconds 
+
+**************
+['single', 'multivariate', 'teacher', '30']: 20.111461877822876 seconds 
+
+**************
+['single', 'multivariate', 'retrain', '30']: 2921.89350771904 seconds 
+
+**************
+['single', 'multivariate', 'student', '30']: 2986.399564743042 seconds 
+
+**************
+['multi', 'multivariate', 'student', '30']: 12671.21175813675 seconds 
+
+**************
