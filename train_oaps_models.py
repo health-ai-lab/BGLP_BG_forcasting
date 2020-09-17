@@ -75,17 +75,17 @@ poly_degree = 2 #degree of polynomial
 models = ['REG','SVR','TREE','ENSEMBLE','LSTM', 'RNN']
 
 if sys.argv[-1] == '0':
-    seg = 'filtered_false/'
-    filter_data = False # median filtering
+    #seg = 'filtered_false/'
+    seg = 'unfiltered_imputed/' #No filtering but imputing missing CGM values
 elif sys.argv[-1] == '1':
-    seg = 'filtered_true/'
-    filter_data = True # median filtering
+    #seg = 'filtered_true/'
+    seg = 'filtered_imputed/' 
 elif sys.argv[-1] == '2':
-    seg = 'filtered_false_extrapolate/'
-    filter_data = False # median filtering
+    #seg = 'filtered_false_extrapolate/'
+    seg = 'unfiltered_unimputed/' #No filtering and not imputing missing CGM values
 elif sys.argv[-1] == '3':
-    seg = 'filtered_true_extrapolate/'
-    filter_data = True # median filtering
+    #seg = 'filtered_true_extrapolate/'
+    seg = 'filtered_unimputed/'
 
 # unpickle a pickled dictionary
 def unpickle_data(data_path):
