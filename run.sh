@@ -1,5 +1,5 @@
 #!/bin/sh
-dataset='ohio' #ohio or oaps
+dataset='oaps' #ohio or oaps
 if [ "$dataset" = "ohio" ]; then
     root_directory="../../../../PHI/PHI_OHIO/" 
     data_directory=$root_directory"data/csv_files/" 
@@ -23,5 +23,5 @@ if [ "$dataset" = "ohio" ]; then
     python $PWD/main.py $root_directory $data_directory $output_directory $model_directory $history_window $prediction_window $dimension $prediction_type $normalize_data $model_name $dataset $save_results $mimic_pipeline
 fi
 if [ "$dataset" = "oaps" ]; then
-    python $PWD/train_oaps_models.py $root_directory $data_directory $model_directory $history_window $prediction_window $dimension $prediction_type $normalize_data $model_name $dataset $save_results
+    python $PWD/train_oaps_models.py $root_directory $data_directory $model_directory $history_window $prediction_window $dimension $prediction_type $normalize_data $model_name $dataset $save_results 1
 fi
