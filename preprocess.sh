@@ -1,5 +1,5 @@
 #!/bin/sh
-dataset='oaps' #ohio or oaps
+dataset='ohio' #ohio or oaps
 if [ "$dataset" = "ohio" ]; then
     root_directory="../../../../PHI/PHI_OHIO/" 
     data_directory=$root_directory"data/"
