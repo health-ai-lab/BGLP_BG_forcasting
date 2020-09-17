@@ -2,9 +2,10 @@
 Code for BGLP2020 paper on glucose prediction using OpenAPS and OhioT1DM data  
 
 Usage:
-In the terminal run the following command  
+In the terminal run the following commands twice. First with `dataset='oaps'` and then with `dataset='ohio'` in `preprocess.sh` and `run.sh` files:  
+
 `chmod +x ./preprocess.sh`  
-`./preprocess.sh`  
+`./preprocess.sh`   
 
 `chmod +x ./run.sh`  
 `./run.sh`  
