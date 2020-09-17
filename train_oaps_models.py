@@ -290,6 +290,8 @@ def CGM_Prediction(model_name,unpickled_train_data ,unpickled_test_data,ij ):
 def make_directories():
     #datetime_now = datetime.datetime.now()
     #datetime_now = datetime_now.strftime("%d-%m-%Y_%I-%M-%S_%p")
+    if not path.exists(output_directory):
+        os.mkdir(output_directory)
     if not path.exists(output_directory + 'overall_results'):
         os.mkdir(output_directory + 'overall_results')
     if not path.exists(output_directory + 'overall_results' + '/' + model_name):
