@@ -384,22 +384,25 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         root_directory = sys.argv[1]
         data_directory = sys.argv[2]
-        output_directory = sys.argv[3]
-        filter_data = sys.argv[4]
-        normalize_data = sys.argv[5]
+        filter_data = sys.argv[3]
+        
+
         if filter_data == 'True':
             filter_data = True
         else:
             filter_data = False
-        normalize_data = sys.argv[3] # scale up all features except glucose
+        
+        normalize_data = sys.argv[4] # scale up all features except glucose
         if normalize_data == 'True':
             normalize_data = True
         else:
             normalize_data = False
-        threshold = int(sys.argv[6]) #remove CGM readings below 15 mg/dL
-        history_window = int(sys.argv[7]) #no. of past values to use to make estimations of future values
-        prediction_window = int(sys.argv[8]) #no. of future values to predict (6 denotes a prediction horizon of 5 * 6 = 30 min)
-        PH = str(prediction_window) #prediction horizon
+        
+        threshold = int(sys.argv[5]) #remove CGM readings below 15 mg/dL
+        history_window = int(sys.argv[6]) #no. of past values to use to make estimations of future values
+        PH = sys.argv[7] #prediction horizon
+        prediction_window = int(sys.argv[7]) #no. of future values to predict (6 denotes a prediction horizon of 5 * 6 = 30 min)
+        
         if prediction_window == 30 or prediction_window == 60:
             prediction_window = prediction_window//5
 
