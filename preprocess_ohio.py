@@ -58,13 +58,6 @@ from sklearn.preprocessing import MinMaxScaler
 all_subjects_data = {}
 windowed_data = {}
 features = ['glucose_level','basal','meal','bolus','temp_basal']
-subjs_paths = glob.glob(sys.argv[2] + ohio_data + '/*.xml') #e.g. ../../../data/PHI/PHI_OHIO/data/OhioT1DM-training
-subjs = []
-
-for subj_path in subjs_paths:
-    subj = subj_path.split('/')[-1] #e.g. Filename = 540-ws-training.xml
-    subj = subj.split('-')[0] #e.g. Subject ID = 540
-    subjs.append(subj)
 
 #Converting XML to CSV. Combining data for different variables
 # parse an xml file by name
@@ -190,7 +183,7 @@ def preprocess_data(df):
 def impute_data():
     if not path.exists(data_directory + 'csv_files/'): #e.g. ../../../data/PHI/PHI_OHIO/data/csv_files/OhioT1DM-training/imputed
         os.mkdir(data_directory + 'csv_files/')
-    if not path.exists(data_directory + 'csv_files/' + ohio_data)
+    if not path.exists(data_directory + 'csv_files/' + ohio_data):
         os.mkdir(data_directory + 'csv_files/' + ohio_data)
     for subj in subjs:
         print('-------------Imputing data for Subject: '+subj+'-------------')
@@ -408,12 +401,26 @@ if __name__ == "__main__":
 
         print("Processing Training Data - OHIO")
         ohio_data = "OhioT1DM-training"
-            impute_data()
-            get_windowed_data()
+        subjs_paths = glob.glob(sys.argv[2] + ohio_data + '/*.xml') #e.g. ../../../data/PHI/PHI_OHIO/data/OhioT1DM-training
+        subjs = []
+
+        for subj_path in subjs_paths:
+            subj = subj_path.split('/')[-1] #e.g. Filename = 540-ws-training.xml
+            subj = subj.split('-')[0] #e.g. Subject ID = 540
+            subjs.append(subj)
+        impute_data()
+        get_windowed_data()
         print("Processing Testing Data - OHIO")
         ohio_data = "OhioT1DM-testing"
-            impute_data()
-            get_windowed_data()
+        impute_data()
+        get_windowed_data()
+        subjs_paths = glob.glob(sys.argv[2] + ohio_data + '/*.xml') #e.g. ../../../data/PHI/PHI_OHIO/data/OhioT1DM-training
+        subjs = []
+
+        for subj_path in subjs_paths:
+            subj = subj_path.split('/')[-1] #e.g. Filename = 540-ws-training.xml
+            subj = subj.split('-')[0] #e.g. Subject ID = 540
+            subjs.append(subj)
         
     else:
         print("Invalid input arguments")
